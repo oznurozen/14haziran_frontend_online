@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		div{
+			width: 33%;
+			float: left;
+			height: 300px;
+
+		}
+		.div1{
+			background-color: red;
+		}
+		.div2{
+			background-color: pink;
+		}
+		.div3{
+			background-color: green;
+		}
+
+		@media screen and (max-width: 991px){
+			.div3{
+				background-color: blue;
+			}
+			div{
+				width: 50%;
+			}
+		}
+		@media screen and (max-width: 768px){
+			.div3{
+				display: none;
+			}
+			div{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+		0-767px ==> mobil ekranlar
+		768px-991px ==> dikey tablet
+		992px-1199px ==> yatay + minibbok+ laptop
+		1200px ve yukarısı ==> notebook +desktop
+	 -->
+
+	 <div class="div1"></div>
+	 <div class="div2"></div>
+	 <div class="div3"></div>
+
+	 <!-- 
+	   4 div oluşturunuz
+	   bu divlerin herbiri farklı renk olsun
+	   yan yana ve ekranı kapladınlar 
+	   991px ve altında div4 yok olsun. genişlik yüzde 33
+	   768px ve altında div3 yok ols-sun div2 rengi değişsin
+	   -->
+
+	   <footer>
+	   	<div>
+	   		<ul></ul>
+	   	</div>
+	   	<div>
+	   		<ul></ul>
+	   	</div>
+	   </footer>
+
+</body>
+</html>

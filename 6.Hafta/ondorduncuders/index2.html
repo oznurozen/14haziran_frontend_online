@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="isim">
+    <input type="password" id="parola">
+    <button id="buton">Giriş Yap</button>
+    
+
+    <script>
+        document.getElementById("buton").onclick=function(){
+            isim = document.getElementById("isim").value;
+            parola = document.getElementById("parola").value;
+            ad = "oznur";
+            sifre = "123456";
+
+            if(isim==ad && sifre==parola){
+                alert("hoşgeldiniz.");
+            }
+            else{
+                alert("Hatalı giriş");
+            }
+        }
+
+
+        // yas = 20;
+        // isim = "öznur";
+
+        // if(yas==25 && isim=="öznur"){
+        //     alert("izin verildi");
+        // }
+        // else{
+        //     alert("Erişim izniniz yok");
+        // }
+    </script>
+</body>
+</html>

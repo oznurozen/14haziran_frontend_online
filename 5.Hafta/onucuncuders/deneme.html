@@ -1,0 +1,57 @@
+{% load static %}
+<style>
+    @media screen and (max-width: 600px) {
+        #buyuk{
+            display: none;
+        }
+        .image-flip{
+            display: none;
+        }
+    }
+    @media screen and (min-width: 600px) {
+        #kucuk{
+            display: none;
+        }
+        .mobile{
+            display: none;
+
+        }
+    }
+</style>
+ <header class="header-area header-sticky" style="background-color: #f7f7f7;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class= "mr-auto main-nav" >
+                        <!-- ***** Logo Start ***** -->
+                        <a href="/" class="logo"><img src="{% static 'assets/images/logo.png' %}" style="width:150px"></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="/" style="color: black;"  >ANASAYFA</a></li>
+                            <li class="scroll-to-section"><a href="/egitimler/" style="color: black;"  >EĞİTİMLER</a></li>
+                            <li class="scroll-to-section nav-item dropdown" id="buyuk">
+                                <a class="dropdown-toggle" style="cursor:pointer; color:black;"  data-bs-toggle="dropdown">HAKKIMIZDA</a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-sm-start">
+                                        <a style="color: black;" class="dropdown-item" href="/akreditasyon/">SERTİFİKA</a>
+                                        <a style="color: black;" class="dropdown-item" href="/galeri/">GALERİ</a>
+                                        <a style="color: black;" class="dropdown-item" href="/hakkimizda/">BİZ KİMİZ</a>
+                                </div>
+                            </li>
+                            <li id="kucuk"  class="scroll-to-section"><a href="/akreditasyon/" style="color: black;">SERTİFİKA</a></li>
+                            <li id="kucuk"  class="scroll-to-section"><a href="/galeri/" style="color: black;">GALERİ</a></li>
+                            <li id="kucuk"  class="scroll-to-section"><a href="/hakkimizda/" style="color: black;">BİZ KİMİZ</a></li>
+                            <li class="scroll-to-section"><a href="/articles/" style="color: black;"  >BLOGLAR</a></li>
+                            <li class="scroll-to-section"><a href="/iletisim/" style="color: black;">İLETİŞİM</a></li>
+                            <li class="scroll-to-section"><a href="/sss/">SSS</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
