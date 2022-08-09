@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="isimsoyisim" placeholder="isim soyisim"><br><br>
+    <input type="text" id="email" placeholder="E-mail"><br><br>
+    <input type="password" id="parola" placeholder="Şifrenizi Giriniz"><br><br>
+    <input type="password" id="parolatekrar" placeholder="Şifrenizi tekrar giriniz"><br><br>
+    <button id="uye">Üye Ol</button>
+
+
+    <script>
+        document.getElementById("uye").onclick=function(){
+            isimsoyisim = document.getElementById("isimsoyisim").value;
+            email = document.getElementById("email").value;
+            parola = document.getElementById("parola").value;
+            parolatekrar = document.getElementById("parolatekrar").value;
+
+            // if(isimsoyisim.length<6 || !email.includes("@") || parola.length<6 || parola!=parolatekrar){
+            //     alert(" Hatalı Giriiş");
+            // }
+            // else{
+            //      alert("Hoşgeldiniz");
+            //  }
+
+
+            if(isimsoyisim.length>6 && email.includes("@") && parola.length>6 && parola==parolatekrar){
+                alert("Hoşgeldiniz");
+            }
+            else{
+                alert(" Hatalı Giriiş");
+            }
+
+
+
+
+            // if(isimsoyisim.length<6){
+            //     alert("a Hatalı Giriiş");
+            // }
+            // if(!email.includes("@")){
+            //     alert("b Hatalı Giriiş");
+            // }
+            // if(parola.length<6){
+            //     alert("c Hatalı Giriiş");
+            // }
+            // if(parola!=parolatekrar){
+            //     alert("d Hatalı Giriiş");
+            // }
+            // else{
+            //     alert("Hoşgeldiniz");
+            // }
+            
+        }
+    </script>
+    
+</body>
+</html>
